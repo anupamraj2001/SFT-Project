@@ -1,0 +1,30 @@
+Anupam raj is an awesome person.
+#include<bits/stdc++.h>
+#define ll long long
+using namespace std;
+
+void recursive(string s, int lo, int hi)
+{
+    if(lo>hi)
+    {
+        return;
+    }
+    int mid=(lo+hi)/2;
+    cout<<s[mid];
+    recursive(s,lo,mid-1);
+    recursive(s,mid+1,hi);
+    
+}
+
+int main(){
+    int t;
+    cin>>t;
+    while(t--)
+    {
+        int n;
+        cin>>n;
+        string s;
+        cin>>s;
+        recursive(s,0,n-1);
+    }
+}
