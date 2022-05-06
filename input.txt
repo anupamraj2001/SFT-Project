@@ -1,4 +1,4 @@
-Anupam raj is an awesome person.
+
 #include<bits/stdc++.h>
 #define ll long long
 using namespace std;
